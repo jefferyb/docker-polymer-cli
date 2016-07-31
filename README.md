@@ -96,7 +96,7 @@ and then you can use:
 
 `npm2docker install` or `npm2docker update` instead of `docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm install`
 
-`gulp2docker serve` instead of `docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli gulp serve`
+`gulp2docker serve` instead of `docker run --rm -v $(pwd):/home/polymer/app -p 5000:5000 jefferyb/polymer-cli gulp serve`
 
 ## Container Shell Access
 
