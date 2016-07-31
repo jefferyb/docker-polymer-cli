@@ -17,27 +17,22 @@ Using the [Polymer Project Documentation](https://www.polymer-project.org/1.0/st
 
 	1. Create a new project folder to start from
 
-		```console
-			mkdir my-app
-			cd my-app
-		```
+		$ mkdir my-app
+		$ cd my-app
+
 	2. Initialize your project with an app template
 
-		```console
-			docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer init app-drawer-template
-		```
+		$ docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer init app-drawer-template
+
 	3. Serve your project
 
-		```console
-			docker run --name polymer-project -d -p 8080:8080 -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer serve -H 0.0.0.0
-		```
+		$ docker run --name polymer-project -d -p 8080:8080 -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer serve -H 0.0.0.0
+
 		and just point your browser to port 8080
 
 	4. When you're done serving your project
 
-		```console
-			docker rm -f polymer-project
-		```
+		$ docker rm -f polymer-project
 
 # How to use this image?
 
