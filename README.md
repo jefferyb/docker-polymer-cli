@@ -86,17 +86,17 @@ This image includes:
 
 And you can make alias for them too to work with your project with something like:
 ```console
-alias bower2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower "
-alias npm2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm "
-alias gulp2docker="docker run --rm -v $(pwd):/home/polymer/app -p 5000:5000 jefferyb/polymer-cli gulp "
+alias bower-docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower "
+alias npm-docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm "
+alias gulp-docker="docker run --rm -v $(pwd):/home/polymer/app -p 5000:5000 jefferyb/polymer-cli gulp "
 ```
 and then you can use:
 
-`bower2docker install` or `bower2docker update`, instead of `docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower install`
+	`bower-docker install` or `bower-docker update`, instead of `docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower install`
 
-`npm2docker install` or `npm2docker update` instead of `docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm install`
+	`npm-docker install` or `npm-docker update` instead of `docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm install`
 
-`gulp2docker serve` instead of `docker run --rm -v $(pwd):/home/polymer/app -p 5000:5000 jefferyb/polymer-cli gulp serve`
+	`gulp-docker serve` instead of `docker run --rm -v $(pwd):/home/polymer/app -p 5000:5000 jefferyb/polymer-cli gulp serve`
 
 ## Container Shell Access
 
