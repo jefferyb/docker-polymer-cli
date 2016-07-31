@@ -13,7 +13,7 @@ This image is built weekly, with all the latest tools...
 Using the [Polymer Project Documentation](https://www.polymer-project.org/1.0/start/toolbox/set-up):
 
 	Initialize & serve your project from a template
-	=======================================
+	===============================================
 
 	1. Create a new project folder to start from
 
@@ -104,5 +104,5 @@ The `docker exec` command allows you to run commands inside a Docker container. 
 If you want to connect as root (for example to install a package), then execute:
 
 ```console
-	$ docker exec -it -u root polymer-project bash
+	docker exec -it -u root polymer-project bash
 ```
