@@ -80,18 +80,20 @@ This image includes:
 
 	* LTS version (4.x) of Node.js
 	* git
+	* gulp
 	* Bower
 	* Polymer CLI
 
 And you can make alias for them too to work with your project with something like:
 ```console
 alias bower2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower "
-```
-and then you can use `bower2docker install` or `bower2docker update`, and/or
-```console
 alias npm2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm "
+alias gulp2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli gulp "
 ```
-and then use `npm2docker install` or `npm2docker update`
+and then you can use:
+`bower2docker install` or `bower2docker update`, instead of `docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower install`
+`npm2docker install` or `npm2docker update` instead of `docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm install`
+`gulp2docker serve` instead of `docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli gulp serve`
 
 ## Container Shell Access
 
