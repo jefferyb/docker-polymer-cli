@@ -39,7 +39,7 @@ Using the [Polymer Project Documentation](https://www.polymer-project.org/1.0/st
 Go to your Polymer project folder, then execute:
 
 ```console
-	docker run --name polymer-project -d -p 8080:8080 -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer serve -H 0.0.0.0
+docker run --name polymer-project -d -p 8080:8080 -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer serve -H 0.0.0.0
 ```
 
 Once it's up and running, just point your browser to port 8080...
@@ -49,18 +49,18 @@ Once it's up and running, just point your browser to port 8080...
 Since the `docker run` command is long, and if you're going to be using it often, I would suggest creating/adding an alias for it in your .bash_profile or .bashrc, like:
 
 ```console
-	alias polymer="docker run --name polymer-project --rm -p 8080:8080 -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer "
+alias polymer="docker run --name polymer-project --rm -p 8080:8080 -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer "
 ```
 
 and then you can just use `polymer` along with the [Polymer CLI commands](https://github.com/Polymer/polymer-cli), like:
 
 ```console
-	polymer init app-drawer-template
+polymer init app-drawer-template
 ```
 to initialize a Polymer project from the app-drawer-template or one of other several templates, or
 
 ```console
-	polymer serve -H 0.0.0.0
+polymer serve -H 0.0.0.0
 ```
 to run a development server that you can reach at port 8080
 
@@ -85,11 +85,11 @@ This image includes:
 
 And you can make alias for them too to work with your project with something like:
 ```console
-	alias bower2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower "
+alias bower2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower "
 ```
 and then you can use `bower2docker install`, and/or
 ```console
-	alias npm2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm "
+alias npm2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm "
 ```
 and then use `npm2docker install`
 
@@ -98,11 +98,11 @@ and then use `npm2docker install`
 The `docker exec` command allows you to run commands inside a Docker container. The following command line will give you a bash shell inside your Polymer project container:
 
 ```console
-	docker exec -it polymer-project bash
+docker exec -it polymer-project bash
 ```
 
 If you want to connect as root (for example to install a package), then execute:
 
 ```console
-	docker exec -it -u root polymer-project bash
+docker exec -it -u root polymer-project bash
 ```
