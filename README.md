@@ -88,7 +88,7 @@ And you can make alias for them too to work with your project with something lik
 ```console
 alias bower2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower "
 alias npm2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm "
-alias gulp2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli gulp "
+alias gulp2docker="docker run --rm -v $(pwd):/home/polymer/app -p 5000:5000 jefferyb/polymer-cli gulp "
 ```
 and then you can use:
 
