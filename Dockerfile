@@ -26,7 +26,7 @@ VOLUME /home/polymer/app
 RUN apt-get update && \
     apt-get install -y --no-install-recommends git && \
     apt-get clean && \
-    npm install -g bower polymer-cli
+    npm install -g gulp bower polymer-cli
 
 USER ${user}
 
