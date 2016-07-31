@@ -87,11 +87,11 @@ And you can make alias for them too to work with your project with something lik
 ```console
 alias bower2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower "
 ```
-and then you can use `bower2docker install`, and/or
+and then you can use `bower2docker install` or `bower2docker update`, and/or
 ```console
 alias npm2docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm "
 ```
-and then use `npm2docker install`
+and then use `npm2docker install` or `npm2docker update`
 
 ## Container Shell Access
 
