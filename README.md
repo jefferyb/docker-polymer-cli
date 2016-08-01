@@ -85,17 +85,20 @@ This image includes:
 
 And you can make alias for them too to work with your project with something like:
 ```console
-alias bower-docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower "
+alias git-docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli git "
 alias npm-docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm "
+alias node-docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli node "
+alias bower-docker="docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower "
 alias gulp-docker="docker run --rm -v $(pwd):/home/polymer/app -p 5000:5000 jefferyb/polymer-cli gulp "
 ```
-and then you can use:
+and then, for example, you can use:
 
-`bower-docker install` or `bower-docker update`, instead of `docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower install`
+	git-docker clone https://github.com/PolymerElements/polymer-starter-kit.git
+	npm-docker install or npm-docker update
+	bower-docker install or bower-docker update
+	gulp-docker serve
 
-`npm-docker install` or `npm-docker update` instead of `docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm install`
-
-`gulp-docker serve` instead of `docker run --rm -v $(pwd):/home/polymer/app -p 5000:5000 jefferyb/polymer-cli gulp serve`
+and just point your browser to port 5000 to get started with Polymer Starter Kit.
 
 ## Container Shell Access
 
