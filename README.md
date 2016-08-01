@@ -3,8 +3,7 @@
 -	[`latest` (*Dockerfile*)](https://github.com/jefferyb/docker-polymer-cli/blob/master/Dockerfile)
 
 # What is image for?
-This is image contains a set of necessary tools for [Polymer CLI Development](https://www.polymer-project.org/1.0/start/toolbox/set-up),
-so you can get up and running developing with Polymer without installing all the tools on your own computer.
+This is image contains a set of necessary tools for [Polymer CLI](https://www.polymer-project.org/1.0/start/toolbox/set-up) and [Polymer Starter Kit](https://github.com/PolymerElements/polymer-starter-kit) Development so you can get up and running developing with Polymer without installing all the tools on your own computer.
 
 This image is built weekly, with all the latest tools...
 
