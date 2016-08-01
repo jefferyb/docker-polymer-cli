@@ -92,11 +92,11 @@ alias gulp-docker="docker run --rm -v $(pwd):/home/polymer/app -p 5000:5000 jeff
 ```
 and then you can use:
 
-	__bower-docker install__ or __bower-docker update__, instead of __docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower install__
+`bower-docker install` or `bower-docker update`, instead of `docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli bower install`
 
-	__npm-docker install__ or __npm-docker update__ instead of __docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm install__
+`npm-docker install` or `npm-docker update` instead of `docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli npm install`
 
-	__gulp-docker serve__ instead of __docker run --rm -v $(pwd):/home/polymer/app -p 5000:5000 jefferyb/polymer-cli gulp serve__
+`gulp-docker serve` instead of `docker run --rm -v $(pwd):/home/polymer/app -p 5000:5000 jefferyb/polymer-cli gulp serve`
 
 ## Container Shell Access
 
