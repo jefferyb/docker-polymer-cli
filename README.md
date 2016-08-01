@@ -93,11 +93,12 @@ alias gulp-docker="docker run --rm -v $(pwd):/home/polymer/app -p 5000:5000 jeff
 ```
 and then, for example, you can use:
 
-	git-docker clone https://github.com/PolymerElements/polymer-starter-kit.git
-	npm-docker install or npm-docker update
-	bower-docker install or bower-docker update
-	gulp-docker serve
-
+```console
+git-docker clone https://github.com/PolymerElements/polymer-starter-kit.git
+npm-docker install or npm-docker update
+bower-docker install or bower-docker update
+gulp-docker serve
+```
 and just point your browser to port 5000 to get started with Polymer Starter Kit.
 
 ## Container Shell Access
