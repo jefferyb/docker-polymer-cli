@@ -1,11 +1,14 @@
-# Supported tags
+[![](https://images.microbadger.com/badges/version/jefferyb/polymer-cli.svg)](http://microbadger.com/images/jefferyb/polymer-cli "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/jefferyb/polymer-cli.svg)](http://microbadger.com/images/jefferyb/polymer-cli "Get your own image badge on microbadger.com")
 
--	[`latest` (*Dockerfile*)](https://github.com/jefferyb/docker-polymer-cli/blob/master/Dockerfile)
-
-# What is image for?
+## jefferyb/polymer-cli
 This is image contains a set of necessary tools for [Polymer CLI](https://www.polymer-project.org/1.0/start/toolbox/set-up) and [Polymer Starter Kit](https://github.com/PolymerElements/polymer-starter-kit) Development so you can get up and running developing with Polymer without installing all the tools on your own computer.
 
 This image is built weekly, with all the latest tools...
+
+## Supported tags
+
+-	[`latest` (*Dockerfile*)](https://github.com/jefferyb/docker-polymer-cli/blob/master/Dockerfile)
 
 ## Build an app with App Toolbox
 
