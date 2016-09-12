@@ -21,18 +21,19 @@ ARG gid=1000
 RUN groupadd -g ${gid} ${group} \
     && useradd -d "$POLYMER_CLI_HOME" -u ${uid} -g ${gid} -m -s /bin/bash ${user}
 
-VOLUME /home/polymer/app
-
 RUN apt-get update && \
     apt-get install -y --no-install-recommends git && \
     apt-get clean && \
-    npm install -g gulp bower polymer-cli
+    npm install -g gulp bower polymer-cli generator-polymer-init-custom-build
 
 USER ${user}
 
 EXPOSE 8080
 
-RUN mkdir -p /home/polymer/app
-WORKDIR /home/polymer/app
+RUN mkdir -p /home/${user}/app
+
+VOLUME /home/${user}/app
+
+WORKDIR /home/${user}/app
 
 CMD bash
