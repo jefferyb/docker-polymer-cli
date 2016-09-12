@@ -5,9 +5,8 @@ This is image contains a set of necessary tools for [Polymer CLI](https://www.po
 
 This image is built weekly, with all the latest tools...
 
-	What's new:
-	===========
-		* [generator-polymer-init-custom-build](https://github.com/PolymerElements/generator-polymer-init-custom-build) - This template is a starting point for building apps using Polymer Starter Kit with a custom gulp process leveraging [polymer-build](https://github.com/Polymer/polymer-build), the library powering [Polymer CLI](https://github.com/Polymer/polymer-cli).
+__What's new:__
+* [generator-polymer-init-custom-build](https://github.com/PolymerElements/generator-polymer-init-custom-build) - This template is a starting point for building apps using Polymer Starter Kit with a custom gulp process leveraging [polymer-build](https://github.com/Polymer/polymer-build), the library powering [Polymer CLI](https://github.com/Polymer/polymer-cli).
 
 ## Supported tags
 
