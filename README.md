@@ -26,7 +26,7 @@ Using the [Polymer Project Documentation](https://www.polymer-project.org/1.0/st
 
 	2. Initialize your project with an app template
 
-		$ docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer init app-drawer-template
+		$ docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer init starter-kit
 
 	3. Serve your project
 
@@ -59,9 +59,9 @@ alias polymer="docker run --name polymer-project --rm -p 8080:8080 -v $(pwd):/ho
 and then you can just use `polymer` along with the [Polymer CLI commands](https://github.com/Polymer/polymer-cli), like:
 
 ```console
-polymer init app-drawer-template
+polymer init starter-kit
 ```
-to initialize a Polymer project from the app-drawer-template or one of other several templates, or
+to initialize a Polymer project from the starter-kit or one of other several templates, or
 
 ```console
 polymer serve -H 0.0.0.0
