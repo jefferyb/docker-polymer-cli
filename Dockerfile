@@ -15,11 +15,8 @@ MAINTAINER Jeffery Bagirimvano <jeffery.rukundo@gmail.com>
 ENV POLYMER_CLI_HOME /home/polymer
 ARG user=polymer
 ARG group=polymer
-ARG uid=1000
-ARG gid=1000
 
-RUN groupadd -g ${gid} ${group} \
-    && useradd -d "$POLYMER_CLI_HOME" -u ${uid} -g ${gid} -m -s /bin/bash ${user}
+RUN useradd -d "$POLYMER_CLI_HOME" -U -m -s /bin/bash ${user}
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends git && \
