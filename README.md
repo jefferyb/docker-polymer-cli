@@ -26,13 +26,13 @@ Using the [Polymer Project Documentation](https://www.polymer-project.org/1.0/st
 
 	2. Initialize your project with an app template
 
-		$ docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer init starter-kit
+		$ docker run --rm -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer init polymer-2-starter-kit
 
 	3. Serve your project
 
-		$ docker run --name polymer-project -d -p 8080:8080 -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer serve -H 0.0.0.0
+		$ docker run --name polymer-project -d -p 8081:8081 -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer serve -H 0.0.0.0
 
-		and just point your browser to port 8080
+		and just point your browser to port 8081
 
 	4. When you're done serving your project
 
@@ -43,17 +43,19 @@ Using the [Polymer Project Documentation](https://www.polymer-project.org/1.0/st
 Go to your Polymer project folder, then execute:
 
 ```console
-docker run --name polymer-project -d -p 8080:8080 -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer serve -H 0.0.0.0
+docker run --name polymer-project -d -p 8081:8081 -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer serve -H 0.0.0.0
 ```
 
-Once it's up and running, just point your browser to port 8080...
+(It looks like the ports have changed from 8080 to 8081)
+
+Once it's up and running, just point your browser to port 8081...
 
 ## Quick Tip
 
 Since the `docker run` command is long, and if you're going to be using it often, I would suggest creating/adding an alias for it in your .bash_profile or .bashrc, like:
 
 ```console
-alias polymer="docker run --name polymer-project --rm -p 8080:8080 -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer "
+alias polymer="docker run --name polymer-project --rm -p 8081:8081 -v $(pwd):/home/polymer/app jefferyb/polymer-cli polymer "
 ```
 
 and then you can just use `polymer` along with the [Polymer CLI commands](https://github.com/Polymer/polymer-cli), like:
@@ -66,7 +68,7 @@ to initialize a Polymer project from the starter-kit or one of other several tem
 ```console
 polymer serve -H 0.0.0.0
 ```
-to run a development server that you can reach at port 8080
+to run a development server that you can reach at port 8081
 
 ## Polymer-CLI Commands
 

@@ -1,0 +1,34 @@
+###################################################################################
+# Dockerfile to build a Polymer Dev Environment container images with Polymer-CLI
+# Based on alpine
+#
+# To build, do:
+#   $ docker build -f Dockerfile.alpine -t jefferyb/polymer-cli:alpine .
+#
+###################################################################################
+
+# Set the base image to alpine
+FROM node:alpine
+
+MAINTAINER Jeffery Bagirimvano <jeffery.rukundo@gmail.com>
+
+ARG POLYMER_USER=polymer
+ARG POLYMER_HOME=/home/polymer
+
+
+RUN adduser -D ${POLYMER_USER}
+
+RUN apk -U add git
+RUN npm install -g gulp bower polymer-cli --unsafe-perm generator-polymer-init-custom-build
+
+USER ${POLYMER_USER}
+
+EXPOSE 8081
+
+RUN mkdir -p ${POLYMER_HOME}/app
+
+VOLUME ${POLYMER_HOME}/app
+
+WORKDIR ${POLYMER_HOME}/app
+
+CMD bash
